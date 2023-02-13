@@ -7,6 +7,8 @@ router.route('/login')
 .get(user_controller.login)
 .post(user_controller.loginRequest);
 
+router.route('/profile').get(user_controller.profile);
+
 router.route('/register')
 .get(user_controller.register)
 .post(user_controller.registerRequest);
